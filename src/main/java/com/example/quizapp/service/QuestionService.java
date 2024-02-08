@@ -43,7 +43,7 @@ public class QuestionService {
         return "Successfully Deleted the question with Id : "+id;
     }
 
-    // Get method to retrieve a single record by its ID
+    // Get method to retrieve a single record by its ID and return success message with Id
     public String updateQuestion(int id, Question question) {
         @SuppressWarnings("deprecation")
         Question updaQuestion = questionDao.getOne(id);
